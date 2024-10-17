@@ -21,6 +21,9 @@ struct WidgetsWallWidgetBundle: WidgetBundle {
         // 字体动画小组件
         TextWidget()
         
+        // 动态小组件
+        DynamicFontWidget()
+        
         // 时间状态小组件
         TodayWidget()
         
