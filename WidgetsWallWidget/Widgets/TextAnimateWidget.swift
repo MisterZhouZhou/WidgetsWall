@@ -50,8 +50,8 @@ struct TextWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
-    TextWidget()
-} timeline: {
-    CommonEntry(date: .now)
-}
+//#Preview(as: .systemSmall) {
+//    TextWidget()
+//} timeline: {
+//    CommonEntry(date: .now)
+//}

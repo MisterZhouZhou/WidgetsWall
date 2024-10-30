@@ -62,8 +62,8 @@ struct GifAnimateWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
-    GifAnimateWidget()
-} timeline: {
-   CommonEntry(date: .now)
-}
+//#Preview(as: .systemSmall) {
+//    GifAnimateWidget()
+//} timeline: {
+//   CommonEntry(date: .now)
+//}

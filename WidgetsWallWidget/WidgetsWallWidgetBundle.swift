@@ -11,7 +11,7 @@ import SwiftUI
 @main
 struct WidgetsWallWidgetBundle: WidgetBundle {
     var body: some Widget {
-        WidgetsWallWidget()
+        // WidgetsWallWidget()
         
         // WidgetsWallWidgetLiveActivity()
         

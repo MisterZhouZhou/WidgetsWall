@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2060AA032CD0FBC6002A7EED /* ChargingShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA012CD0FBC6002A7EED /* ChargingShortcut.swift */; };
+		2060AA052CD0FE55002A7EED /* ShortCutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */; };
+		2060AA092CD1DA04002A7EED /* CharingShortcutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */; };
 		20F1075E2CC0AE8A001E7982 /* WidgetsWallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1075D2CC0AE8A001E7982 /* WidgetsWallApp.swift */; };
 		20F107602CC0AE8A001E7982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1075F2CC0AE8A001E7982 /* ContentView.swift */; };
 		20F107622CC0AE8C001E7982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F107612CC0AE8C001E7982 /* Assets.xcassets */; };
@@ -97,6 +100,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2060AA012CD0FBC6002A7EED /* ChargingShortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargingShortcut.swift; sourceTree = "<group>"; };
+		2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutsProvider.swift; sourceTree = "<group>"; };
+		2060AA062CD1D1B0002A7EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharingShortcutWindow.swift; sourceTree = "<group>"; };
 		20F1075A2CC0AE8A001E7982 /* WidgetsWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetsWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F1075D2CC0AE8A001E7982 /* WidgetsWallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsWallApp.swift; sourceTree = "<group>"; };
 		20F1075F2CC0AE8A001E7982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +161,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2060AA022CD0FBC6002A7EED /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				2060AA012CD0FBC6002A7EED /* ChargingShortcut.swift */,
+				2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		2060AA072CD1D9DC002A7EED /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
 		20F107512CC0AE8A001E7982 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +200,9 @@
 		20F1075C2CC0AE8A001E7982 /* WidgetsWall */ = {
 			isa = PBXGroup;
 			children = (
+				2060AA072CD1D9DC002A7EED /* Windows */,
+				2060AA062CD1D1B0002A7EED /* Info.plist */,
+				2060AA022CD0FBC6002A7EED /* Shortcuts */,
 				20F107C82CC0FCDA001E7982 /* Modifier */,
 				20F107C42CC0F980001E7982 /* Const */,
 				20F107B72CC0E6A9001E7982 /* ThirdLib */,
@@ -439,11 +466,14 @@
 				20F107602CC0AE8A001E7982 /* ContentView.swift in Sources */,
 				20F107B12CC0E519001E7982 /* UIImage+.swift in Sources */,
 				20F107B52CC0E605001E7982 /* GifImageView.swift in Sources */,
+				2060AA052CD0FE55002A7EED /* ShortCutsProvider.swift in Sources */,
 				20F107CD2CC0FD2E001E7982 /* View+.swift in Sources */,
 				20F107CA2CC0FCFB001E7982 /* Modifiers.swift in Sources */,
 				20F1075E2CC0AE8A001E7982 /* WidgetsWallApp.swift in Sources */,
 				20F107D02CC0FE21001E7982 /* Date+.swift in Sources */,
 				20F107A02CC0C3BF001E7982 /* TimeNotifityAttributes.swift in Sources */,
+				2060AA032CD0FBC6002A7EED /* ChargingShortcut.swift in Sources */,
+				2060AA092CD1DA04002A7EED /* CharingShortcutWindow.swift in Sources */,
 				20F107C62CC0F98A001E7982 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -612,15 +642,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetsWall/Preview Content\"";
+				DEVELOPMENT_TEAM = Q952NSTXA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetsWall/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,15 +675,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WidgetsWall/Preview Content\"";
+				DEVELOPMENT_TEAM = Q952NSTXA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetsWall/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,11 +706,12 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q952NSTXA7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetsWallWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetsWallWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,11 +734,12 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q952NSTXA7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetsWallWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetsWallWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

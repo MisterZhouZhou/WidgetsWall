@@ -11,9 +11,15 @@ import SwiftUI
 struct WidgetsWallApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
+            ContentView()
             // 灵动岛-实时通知
-            TimeNotifityView()
+            // TimeNotifityView()
         }
+        // 添加新窗口场景
+//        WindowGroup(id: "SecondWindow") {
+//            ChargingAnimationView()
+//        }
+//        .windowStyle(.hiddenTitleBar)
+//        .defaultSize(width: 300, height: 400)
     }
 }

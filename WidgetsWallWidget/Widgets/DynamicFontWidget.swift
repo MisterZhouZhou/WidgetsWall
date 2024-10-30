@@ -54,8 +54,8 @@ struct DynamicFontWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
-    DynamicFontWidget()
-} timeline: {
-    CommonEntry(date: .now)
-}
+//#Preview(as: .systemSmall) {
+//    DynamicFontWidget()
+//} timeline: {
+//    CommonEntry(date: .now)
+//}

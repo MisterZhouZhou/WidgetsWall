@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 
+@available(iOSApplicationExtension 17.0, *)
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
@@ -32,11 +33,13 @@ struct Provider: AppIntentTimelineProvider {
     }
 }
 
+@available(iOSApplicationExtension 17.0, *)
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
 }
 
+@available(iOSApplicationExtension 17.0, *)
 struct WidgetsWallWidgetEntryView : View {
     var entry: Provider.Entry
 
@@ -51,6 +54,7 @@ struct WidgetsWallWidgetEntryView : View {
     }
 }
 
+@available(iOSApplicationExtension 17.0, *)
 struct WidgetsWallWidget: Widget {
     let kind: String = "WidgetsWallWidget"
 
@@ -63,6 +67,7 @@ struct WidgetsWallWidget: Widget {
     }
 }
 
+@available(iOSApplicationExtension 17.0, *)
 extension ConfigurationAppIntent {
     fileprivate static var smiley: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
@@ -77,9 +82,9 @@ extension ConfigurationAppIntent {
     }
 }
 
-#Preview(as: .systemMedium) {
-    WidgetsWallWidget()
-} timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
-    SimpleEntry(date: .now, configuration: .starEyes)
-}
+//#Preview(as: .systemMedium) {
+//    WidgetsWallWidget()
+//} timeline: {
+//    SimpleEntry(date: .now, configuration: .smiley)
+//    SimpleEntry(date: .now, configuration: .starEyes)
+//}

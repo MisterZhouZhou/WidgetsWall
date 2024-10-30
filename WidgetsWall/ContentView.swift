@@ -7,17 +7,27 @@
 
 import SwiftUI
 
+// 主视图
 struct ContentView: View {
+    @StateObject private var windowManager = WindowManager.shared
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("主窗口")
+                .font(.title)
+            
+            Button("打开新窗口") {
+                windowManager.showWindow()
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
+
 
 #Preview {
     ContentView()

@@ -72,9 +72,9 @@ extension WidgetsWallWidgetAttributes.ContentState {
      }
 }
 
-#Preview("Notification", as: .content, using: WidgetsWallWidgetAttributes.preview) {
-   WidgetsWallWidgetLiveActivity()
-} contentStates: {
-    WidgetsWallWidgetAttributes.ContentState.smiley
-    WidgetsWallWidgetAttributes.ContentState.starEyes
-}
+//#Preview("Notification", as: .content, using: WidgetsWallWidgetAttributes.preview) {
+//   WidgetsWallWidgetLiveActivity()
+//} contentStates: {
+//    WidgetsWallWidgetAttributes.ContentState.smiley
+//    WidgetsWallWidgetAttributes.ContentState.starEyes
+//}

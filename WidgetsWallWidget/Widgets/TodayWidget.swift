@@ -109,12 +109,12 @@ struct TodayWidget: Widget {
         }
         .configurationDisplayName("时间状态小组件")
         .description("This is an example widget.")
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
-#Preview(as: .systemSmall) {
-    TextWidget()
-} timeline: {
-    TodayEntry(date: .now, time: .morning)
-}
+//#Preview(as: .systemSmall) {
+//    TextWidget()
+//} timeline: {
+//    TodayEntry(date: .now, time: .morning)
+//}
