@@ -10,6 +10,8 @@
 		2060AA032CD0FBC6002A7EED /* ChargingShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA012CD0FBC6002A7EED /* ChargingShortcut.swift */; };
 		2060AA052CD0FE55002A7EED /* ShortCutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */; };
 		2060AA092CD1DA04002A7EED /* CharingShortcutWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */; };
+		2060AA0C2CD21A25002A7EED /* WWJavaScriptCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA0B2CD21A25002A7EED /* WWJavaScriptCore.swift */; };
+		2060AA0E2CDE19ED002A7EED /* RunJavaScriptShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060AA0D2CDE19ED002A7EED /* RunJavaScriptShortcut.swift */; };
 		20F1075E2CC0AE8A001E7982 /* WidgetsWallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1075D2CC0AE8A001E7982 /* WidgetsWallApp.swift */; };
 		20F107602CC0AE8A001E7982 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1075F2CC0AE8A001E7982 /* ContentView.swift */; };
 		20F107622CC0AE8C001E7982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F107612CC0AE8C001E7982 /* Assets.xcassets */; };
@@ -104,6 +106,8 @@
 		2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutsProvider.swift; sourceTree = "<group>"; };
 		2060AA062CD1D1B0002A7EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharingShortcutWindow.swift; sourceTree = "<group>"; };
+		2060AA0B2CD21A25002A7EED /* WWJavaScriptCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWJavaScriptCore.swift; sourceTree = "<group>"; };
+		2060AA0D2CDE19ED002A7EED /* RunJavaScriptShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunJavaScriptShortcut.swift; sourceTree = "<group>"; };
 		20F1075A2CC0AE8A001E7982 /* WidgetsWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetsWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F1075D2CC0AE8A001E7982 /* WidgetsWallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsWallApp.swift; sourceTree = "<group>"; };
 		20F1075F2CC0AE8A001E7982 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			children = (
 				2060AA012CD0FBC6002A7EED /* ChargingShortcut.swift */,
 				2060AA042CD0FE55002A7EED /* ShortCutsProvider.swift */,
+				2060AA0D2CDE19ED002A7EED /* RunJavaScriptShortcut.swift */,
 			);
 			path = Shortcuts;
 			sourceTree = "<group>";
@@ -176,6 +181,14 @@
 				2060AA082CD1DA04002A7EED /* CharingShortcutWindow.swift */,
 			);
 			path = Windows;
+			sourceTree = "<group>";
+		};
+		2060AA0A2CD219F4002A7EED /* JSCore */ = {
+			isa = PBXGroup;
+			children = (
+				2060AA0B2CD21A25002A7EED /* WWJavaScriptCore.swift */,
+			);
+			path = JSCore;
 			sourceTree = "<group>";
 		};
 		20F107512CC0AE8A001E7982 = {
@@ -200,6 +213,7 @@
 		20F1075C2CC0AE8A001E7982 /* WidgetsWall */ = {
 			isa = PBXGroup;
 			children = (
+				2060AA0A2CD219F4002A7EED /* JSCore */,
 				2060AA072CD1D9DC002A7EED /* Windows */,
 				2060AA062CD1D1B0002A7EED /* Info.plist */,
 				2060AA022CD0FBC6002A7EED /* Shortcuts */,
@@ -245,7 +259,6 @@
 				20F107932CC0BF54001E7982 /* Widgets */,
 				20F1077D2CC0BE33001E7982 /* WidgetsWallWidgetBundle.swift */,
 				20F1077F2CC0BE33001E7982 /* WidgetsWallWidgetLiveActivity.swift */,
-				20F107812CC0BE33001E7982 /* WidgetsWallWidget.swift */,
 				20F107832CC0BE33001E7982 /* AppIntent.swift */,
 				20F107852CC0BE34001E7982 /* Assets.xcassets */,
 				20F107872CC0BE34001E7982 /* Info.plist */,
@@ -256,6 +269,7 @@
 		20F107932CC0BF54001E7982 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				20F107812CC0BE33001E7982 /* WidgetsWallWidget.swift */,
 				20F107912CC0BEB8001E7982 /* TextAnimateWidget.swift */,
 				20F107AA2CC0E04C001E7982 /* DynamicFontWidget.swift */,
 				20F107A22CC0DA2F001E7982 /* TodayWidget.swift */,
@@ -463,6 +477,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F1079D2CC0C34D001E7982 /* TimeNotifityView.swift in Sources */,
+				2060AA0E2CDE19ED002A7EED /* RunJavaScriptShortcut.swift in Sources */,
+				2060AA0C2CD21A25002A7EED /* WWJavaScriptCore.swift in Sources */,
 				20F107602CC0AE8A001E7982 /* ContentView.swift in Sources */,
 				20F107B12CC0E519001E7982 /* UIImage+.swift in Sources */,
 				20F107B52CC0E605001E7982 /* GifImageView.swift in Sources */,
@@ -711,7 +727,7 @@
 				INFOPLIST_FILE = WidgetsWallWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetsWallWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,7 +755,7 @@
 				INFOPLIST_FILE = WidgetsWallWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = WidgetsWallWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

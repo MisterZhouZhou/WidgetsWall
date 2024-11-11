@@ -7,6 +7,26 @@
 
 import WidgetKit
 import SwiftUI
+import AudioToolbox
+import AppIntents
+
+
+func vibrate() {
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+}
+
+struct MyCalculateIntent: AppIntent {
+    // 标题
+    static var title: LocalizedStringResource = "点击震动"
+    // 描述
+    static var description: IntentDescription = IntentDescription("点击震动")
+    
+    // 计算结果,结果存储到全局
+    func perform() async throws -> some IntentResult {
+        vibrate()
+        return .result()
+    }
+}
 
 @available(iOSApplicationExtension 17.0, *)
 struct Provider: AppIntentTimelineProvider {
@@ -48,8 +68,10 @@ struct WidgetsWallWidgetEntryView : View {
             Text("Time:")
             Text(entry.date, style: .time)
 
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
+            Button(intent: MyCalculateIntent()) {
+                Text("按钮点击")
+            }
+
         }
     }
 }

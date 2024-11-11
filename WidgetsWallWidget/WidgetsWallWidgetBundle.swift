@@ -11,23 +11,23 @@ import SwiftUI
 @main
 struct WidgetsWallWidgetBundle: WidgetBundle {
     var body: some Widget {
-        // WidgetsWallWidget()
+        WidgetsWallWidget()
         
         // WidgetsWallWidgetLiveActivity()
         
         // 实时活动通知
-        TimeNotifityLiveActivity()
+        // TimeNotifityLiveActivity()
         
         // 字体动画小组件
-        TextWidget()
+        //TextWidget()
         
         // 动态小组件
-        DynamicFontWidget()
+        //DynamicFontWidget()
         
         // 时间状态小组件
-        TodayWidget()
+        //TodayWidget()
         
         // gif动画小组件
-        GifAnimateWidget()
+        //GifAnimateWidget()
     }
 }

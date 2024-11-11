@@ -11,7 +11,10 @@ import SwiftUI
 struct WidgetsWallApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // JavaScriptCore
+            WWJavaScriptCore()
+            
+            // ContentView()
             // 灵动岛-实时通知
             // TimeNotifityView()
         }
