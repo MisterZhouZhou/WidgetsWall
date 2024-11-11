@@ -12,3 +12,9 @@
     <img src="./screenshot/gifWidget.png" alt="Image 3" style="width: 45%;"/>
 </div>
 <img src="./screenshot/gif.GIF" alt="Image 1" />
+
+## 充电指令
+<img src="./screenshot/charging.png" alt="Image s" style="width: 45%;" />
+
+## 运行JavaScript指令
+<img src="./screenshot/javaScript.PNG" alt="Image s" style="width: 45%;" />
