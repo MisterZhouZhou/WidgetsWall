@@ -21,3 +21,6 @@
 
 ## 运行JavaScript指令
 <img src="./screenshot/javaScript.PNG" alt="Image s" style="width: 45%;" />
+
+## 参考
+- https://github.com/Eilgnaw/ClockRotationEffect/blob/main/Tests/ClockRotationEffectTests/ClockRotationEffectTests.swift
