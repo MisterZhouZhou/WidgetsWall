@@ -12,6 +12,9 @@
     <img src="./screenshot/gifWidget.png" alt="Image 3" style="width: 45%;"/>
 </div>
 <img src="./screenshot/gif.GIF" alt="Image 1" />
+<img src="./screenshot/rotate.gif" alt="Image 1" />
+<img src="./screenshot/rotateText.gif" alt="Image 1" />
+<img src="./screenshot/rotateLine.gif" alt="Image 1" />
 
 ## 充电指令
 <img src="./screenshot/charging.png" alt="Image s" style="width: 45%;" />
