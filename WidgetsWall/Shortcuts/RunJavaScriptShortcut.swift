@@ -19,12 +19,12 @@ struct RunJavaScriptShortcut: AppIntent {
 
     static var parameterSummary: some ParameterSummary {
         // 写法1 参数一行展示
-        // Summary("运行JavaScript \(\.$jsCcode)")
+        Summary("运行JavaScript \(\.$jsCcode)")
         
         // 写法2 参数折叠展示,默认
-        Summary("运行JavaScript") {
-            \.$jsCcode
-        }
+//        Summary("运行JavaScript") {
+//            \.$jsCcode
+//        }
     }
     
     func perform() async throws -> some IntentResult & ReturnsValue<String> {
